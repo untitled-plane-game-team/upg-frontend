@@ -24,7 +24,7 @@ class GuessCountryModal extends React.Component {
     return (<div className={this.props.show
         ? 'modal black-text open'
         : 'modal black-text close'}>
-      <div className="modal-content" id="guess-country-modal">
+      <div className="modal-content" id="guess-country-modal" style={{"line-height": "normal"}}>
         <h5 className="ceter">Enter a country:</h5>
         <p>If you get it wrong, this will cost you 300 credits!</p>
         <Select
