@@ -31,7 +31,7 @@ class GuessCountry extends Component {
 
   render() {
     return (<div>
-      <button className="waves-effect waves-light btn" onClick={this.handleShowModal}>Guess a country</button>
+      <button className="waves-effect waves-light btn blue accent1" onClick={this.handleShowModal}>Guess a country</button>
       <GuessCountryModal handleHideModal={this.handleHideModal} show={this.state.view.showModal}/></div>
     );
   }

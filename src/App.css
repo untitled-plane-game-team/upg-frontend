@@ -62,3 +62,28 @@
 .my-nav {
   box-shadow: none;
 }
+
+nav {
+	background-color: blue;
+}
+
+.collection {
+	border-width: 0;
+}
+
+.collection .collection-item {
+	border-width: 0;
+	text-align: center;
+}
+
+.card-title {
+	border-bottom: 1px solid skyblue;
+	padding: 0.5em;
+	font-size: 1.5em !important;
+	font-weight: normal !important;
+}
+
+.collection-item {
+	font-size: 1.5em;
+}
+

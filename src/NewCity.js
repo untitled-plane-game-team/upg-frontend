@@ -32,7 +32,7 @@ class NewCity extends Component {
   render() {
 
     return (<div>
-      <a class="waves-effect waves-light btn-large full-width modal-trigger" onClick={this.handleShowModal}>
+      <a class="waves-effect waves-light btn-large full-width modal-trigger blue accent2" style={{"border-radius": 0}} onClick={this.handleShowModal}>
         <i class="material-icons right">add</i>Fly to another city (-300)</a>
       <NewCityModal handleHideModal={this.handleHideModal} show={this.state.view.showModal}/>
     </div>)
