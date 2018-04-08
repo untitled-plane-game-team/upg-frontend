@@ -1,16 +1,39 @@
 import React from 'react';
+import Select from 'react-select';
+import 'react-select/dist/react-select.css';
+import cities from './data/CitiesWithIds.js';
+import './NewCityModal.css';
 
 class NewCityModal extends React.Component {
+  constructor() {
+    super();
+    this.state = {selectedOption: ''}
+  }
+
+  handleChange = (selectedOption) => {
+    this.setState({ selectedOption });
+    console.log(`Selected: ${selectedOption.label}`);
+  }
 
   render() {
+    const { selectedOption } = this.state;
+    const value = selectedOption && selectedOption.value;
+
     return (<div className={this.props.show
         ? 'modal open'
         : 'modal close'}>
-      <div className="modal-content">
+      <div className="modal-content" id="new-city-modal">
         <h5 className="ceter">Pick a city to fly to:</h5>
         <p>This will cost you 300 credits!</p>
-        <textarea id="country-guess" class="materialize-textarea"></textarea>
-        <label for="country-guess">I want to fly to...</label>
+        <Select
+        name="city-request"
+        value="{value}"
+        onChange={this.handleChange}
+        options={cities.City}
+        id="city-request"
+      />
+        <label for="city-request">I want to fly to...</label>
+
       </div>
       <div className="modal-footer">
         <a class="waves-effect waves-light btn left" onClick={this.props.handleHideModal}>

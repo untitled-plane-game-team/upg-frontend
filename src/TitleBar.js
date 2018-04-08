@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import GuessCountry from './GuessCountry.js';
+import logo from './logo.svg';
 
 class TitleBar extends Component {
   render() {
@@ -7,7 +8,7 @@ class TitleBar extends Component {
       <nav className="teal darken-4 nav">
         <ul className="row">
           <li className="col s12 m4">
-            <img src="./logo.svg" className="brand-logo center"/>
+            <img src={logo} id="logo" className="brand-logo center"/>
           </li>
         </ul>
       </nav>

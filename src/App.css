@@ -33,9 +33,28 @@
 
 .open {
   display: block;
-  z-index: 1000;
+  z-index: 20;
 }
 
 .close {
   display: none;
+}
+
+#logo {
+  padding-top: 5px;
+  width: 110px;
+}
+
+@media(min-width: 600px) {
+  #logo {
+    padding-top: 6px;
+    width: 160px;
+  }
+}
+
+@media(min-width: 992px) {
+  #logo {
+    padding-top: 8px;
+    width: 200px;
+  }
 }

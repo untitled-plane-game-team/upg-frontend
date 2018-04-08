@@ -1,3 +1,11 @@
 #guess-country-submit {
   line-height: 36px;
 }
+
+#country-guess {
+  overflow: scroll;
+}
+
+#guess-country-modal {
+  padding-bottom: 200px;
+}
